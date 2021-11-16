@@ -19,7 +19,7 @@
 <v-list-item 
           v-for="link in links"
           :key="link.title"
->
+          :to="link.url">
 <v-list-item-icon>
 <v-icon>{{ link.icon }}</v-icon>
 </v-list-item-icon>
@@ -37,6 +37,7 @@
 <v-btn 
        v-for="link in links"
        :key="link.title"
+       :to="link.url"
        text><v-icon left>{{ link.icon }}</v-icon>{{ link.title }}</v-btn>
 </v-toolbar-items>
 </v-app-bar>
