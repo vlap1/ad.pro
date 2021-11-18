@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Ad from '@/components/Ads/Ad'
@@ -48,3 +47,4 @@ export default new Router({
 	],
 	mode: 'history'
 })
+
