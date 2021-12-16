@@ -43,7 +43,7 @@ export default {
 			orders: [
 			{
 				id:"123",
-				name:"Kostya",
+				name:"Lera",
 				phone:"+7(978)000-00-05",
 				adId:"1",
 				done:true
