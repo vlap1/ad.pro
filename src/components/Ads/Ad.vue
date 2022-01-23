@@ -4,8 +4,8 @@
 			<v-flex xs12>
 				<v-card class="mt-5">
 					<v-img
-					 height="300px"
-					 :src="ad.src"
+					height="300px"
+					:src="ad.src"
 					></v-img>
 					<v-card-text>
 						<h1 class="text--primary mb-3">{{ ad.title }}</h1>

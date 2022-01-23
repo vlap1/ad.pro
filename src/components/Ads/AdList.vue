@@ -41,6 +41,6 @@ export default {
 		myAds(){
 			return this.$store.getters.myAds
 		}
-	 }
+	}
 }
 </script>
