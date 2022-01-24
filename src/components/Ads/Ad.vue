@@ -13,7 +13,7 @@
 					</v-card-text>
 					<v-card-actions>
 						<v-spacer></v-spacer>
-						<modal-dialog :ad="ad"></modal-dialog>
+						<modal-dialog :ad="ad" v-if="isOwner"></modal-dialog>
 						<v-btn class="success">Buy</v-btn>
 					</v-card-actions>	
 				</v-card>
@@ -47,6 +47,9 @@ export default {
 		},
 		loading () {
 			return this.$store.getters.loading
+		},
+		isOwner () {
+			return this.ad.ownerId === this.$store.getters.user.id
 		}
 	},
 	components: {
